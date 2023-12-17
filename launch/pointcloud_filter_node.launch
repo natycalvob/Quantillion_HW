@@ -1,0 +1,12 @@
+<launch>
+    <!-- Node to launch the PointCloudFilter -->
+    <node pkg="pointcloud_filter" type="pc_filter_node" name="pointcloud_filter_node_hw"  output="screen">
+        <!-- Set parameters for the node -->
+        <param name="throttle_rate" value="2"/> 
+        <param name="intensity_threshold" value="1000.0"/> 
+    </node>
+
+    <!-- Launch the rviz configuration -->
+    <node name="rviz" pkg="rviz" type="rviz" args="-d $(find pointcloud_filter)/rviz_config/pc_visualization_config.rviz" />
+</launch>
+
