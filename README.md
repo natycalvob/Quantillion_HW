@@ -19,7 +19,7 @@ The `pointcloud_filter_node_hw` subscribes to a PointCloud2 `/input_pointcloud` 
 
     ```bash
     cd ~/catkin_ws/src
-    git clone <repository_url>
+    git clone https://github.com/natycalvob/Quantillion_HW.git
     ```
 
 2. Build the package:
